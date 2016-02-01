@@ -10,10 +10,88 @@ nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
     div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
       ul.nav.navbar-nav.navbar-right
         li
-          a(href="#") About
+          a(href="#about") About
+        li
+          a(href="#solutions") Solutions
+        li
+          a(href="#contact") Contact
 
 div.container
+  div.jumbotron#homejb
+
+    h2 Digital Solutions <em>for</em> Latinos <em>by</em> Latinos. 
+    p Specializing in Online Solutions for Latino-owned businesses and Social Justice Organizations.
+    
+  
+.container-fluid.home-lead  
+  .row
+    .col-lg-12
+      h2.lead.text-center The only digital firm that offers 50% of its services pro-bono to social justice organizations.
+      
+div.container#about  
   div.row
-    div.col-lg-12.text-center
-      h1 Welcome to PochoLabs
-      p.lead Still working on this...
+    div.col-lg-12
+      h1 About Celso
+      p.lead Where passion for technology and the immigrant community meet.
+      p I have been a digital activist since 2009 when I was catalyzed into the undocumented youth movement because of my immigration status. Throughout my 6 years of digital organizing, I have learned digital skills that I noticed were usually missing in the immigrant community. 
+      p Through PochoLabs, my goal is to make these skills available to the immigrant community by offering various solutions for social justice organizations and immigrant-owned businesses. 
+      p This is a social enterprise, and as such, PochoLabs operates differently from other web development firms:
+      ol
+        li <strong>Creating more Latino Tech Entrepreneurs</strong>: For big projects, instead of hiring or subcontracting web developers, I instead create a partnership with other Latino-owned firms or freelancers for that specific project. Instead of offering a job, I like to offer business opportunities to fellow Latino web developers.
+        li <strong>50% of the projects are pro-bono</strong>: This is a bit radical, but necessary for both the immigrant community and for me to grow as a developer.
+        
+.container-fluid.home-lead  
+  .row
+    .col-lg-12
+      h2.lead.text-center Where passion for technology and the immigrant community meet.
+
+.container      
+  .row#solutions
+    .col-lg-12
+      h1 For Every Stage of your Online Presence:
+    .col-sm-4
+      .package
+        .p-heading
+          h3 Starter Package
+        .p-content
+          ul
+            li Single-Page Website
+            li SEO (Search Engine Optimization)
+            li Lead Generation (Get prospective clients!)
+    .col-sm-4
+      .package
+        .p-heading
+          h3 Digital Savvy Package
+        .p-content
+          ul
+            li * Everything in previous package
+            li Easily Editable Website (through WordPress, Nationbuilder)
+            li Multiple Pages (up to 10)
+    .col-sm-4
+      .package
+        .p-heading
+          h3 Digital Mastermind Package
+        .p-content
+          ul
+            li * Everything in previous package
+            li Custom Branded Design
+            li Advanded functionality (Think Web Apps, Logins etc...)
+  .row#contact
+    .col-lg-12
+      h3 Get in touch to start your project
+    .col-md-4.col-sm-2
+    .col-md-4.col-sm-8
+      form(action='//formspree.io/celso@digitalstrategy.tips', method='POST')
+        .form-group
+          input(type='text', name='name', class="form-control", placeholder="Your Name")
+        .form-group
+          input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
+        .form-group
+          input(type='submit', value='Send', class="form-control btn btn-primary")
+    .col-md-4.col-sm-2
+
+footer
+  .container-fluid
+    .col-lg-12
+      h5 Copyright &copy; 2016. A project of Computer Dude Services LLC.
+  
