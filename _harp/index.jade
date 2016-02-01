@@ -79,16 +79,18 @@ div.container#about
   .row#contact
     .col-lg-12
       h3 Get in touch to start your project
-    .col-md-4.col-sm-2
-    .col-md-4.col-sm-8
+    .col-lg-4.col-md-2.col-sm-2
+    .col-lg-4.col-md-8.col-sm-8
       form(action='//formspree.io/celso@digitalstrategy.tips', method='POST')
         .form-group
           input(type='text', name='name', class="form-control", placeholder="Your Name")
         .form-group
           input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
         .form-group
+          textarea(type='text', name='message', class="form-control", placeholder="Your Message")
+        .form-group
           input(type='submit', value='Send', class="form-control btn btn-primary")
-    .col-md-4.col-sm-2
+    .col-lg-4.col-md-4.col-sm-2
 
 footer
   .container-fluid
