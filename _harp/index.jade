@@ -29,13 +29,13 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 .container-fluid.home-lead  
 	.row
 		.col-lg-12
-			h2.lead.text-center.wow.pulse The only digital firm that offers 50% of its services pro-bono to social justice organizations.
+			p.lead.text-center.wow.pulse The only digital firm that offers 50% of its services pro-bono to social justice organizations.
 
 #about      
 	div.container  
 		div.row
 			.col-md-4.col-sm-6
-				img(src="img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive wow pulse")
+				img(src="img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
 			.col-md-8.col-sm-6
 				h1 About Celso
 				p.lead Embracing the unique benefits that being a multicultural technologist provides.
@@ -47,11 +47,17 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 					li <strong>50% of the projects are pro-bono</strong>: This is a bit radical, but necessary for both the immigrant community and for me to grow as a developer.
 
 
+.container-fluid.home-lead.wow.pulse
+	.row
+		.col-lg-12
+			p.lead.text-center Where passion for technology and the immigrant community meet.
+
+!= partial('_partials/portfolio.jade')
 
 .container-fluid.home-lead.wow.pulse
 	.row
 		.col-lg-12
-			h2.lead.text-center Where passion for technology and the immigrant community meet.
+			p.lead.text-center Where passion for technology and the immigrant community meet.
 
 #solutions
 	.container      
@@ -68,7 +74,7 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 							li SEO (Search Engine Optimization)
 							li Lead Generation (Get prospective clients!)
 			.col-sm-4
-				.package.popular.wow.fadeInDownBig
+				.package.popular.wow.zoomInUp
 					.p-heading
 						h3.text-center Digital Savvy
 					.p-content

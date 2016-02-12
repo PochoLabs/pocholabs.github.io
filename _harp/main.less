@@ -4,6 +4,18 @@ body {
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+h1{
+
+}
+
+h2{
+	// color: darken(@brand-primary,25%);
+}
+
+h3{
+
+}
+
 /* Layout */
 
 .img-centered{
@@ -40,9 +52,9 @@ body {
 .home-lead {
   background: @brand-secondary;
   color: #fff;
-  & h2{
+  & p{
     font-style: italic;
-  
+		padding-top: 15px;
     font-size: 1.6em;
   }
 	&:hover{
@@ -109,7 +121,45 @@ body {
   }
 }
 
+/* Portfolio Section */
 
+#portfolio{
+	margin: 0px;
+	& .col-md-4{
+		position: relative;
+		padding: 0px;
+		& .box-bg{
+			position: relative;
+			height: 100%;
+			width: 100%;
+			& img{
+				height: 100%;
+			}
+		}
+		& .box-content{
+			position: absolute;
+			top: 0px;
+			background: rgba(0,0,0,0.7);
+			padding: 10%;
+			height: 100%;
+			width: 100%;
+			& a {
+				color: #fff;
+				}& i{
+					margin: 0px auto;
+					text-align: center;
+					font-size: 6em;
+					color: #fff;
+				}
+		}
+	}
+}
+
+.close-modal{
+	float:right;
+	padding: 20px;
+	font-size: 2.3em;
+}
 
 /* Footer */
 
