@@ -1,12 +1,18 @@
 doctype
 html(lang="en")
 	head
-		title PochoLabs
+		title PochoLabs | Web Design
 		link(rel="stylesheet" href="css/animate.min.css")
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
 
 		link(rel="stylesheet" href="main.css")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(property='og:title', content='PochoLabs Web Design')
+
+		meta(property='og:image', content='http://pocholabs.com/img/pocho-labs-web-design.jpg')
+		meta(property='og:site_name', content='PochoLabs Web Design')
+		meta(property='og:description', content="Where passion for technology and the immigrant community meet.")
+
 	body
 		!= yield
 
