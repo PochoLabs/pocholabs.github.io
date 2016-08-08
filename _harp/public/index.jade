@@ -53,13 +53,6 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 		.col-lg-12
 			p.lead.text-center Where passion for technology and the immigrant community meet.
 
-!= partial('_partials/portfolio.jade')
-
-.container-fluid.home-lead.wow.pulse
-	.row
-		.col-lg-12
-			p.lead.text-center Latin@-owned business? Organization trying to make the better world? I want to help you!
-
 #solutions
 	.container      
 		.row
@@ -94,21 +87,30 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 
 							li Custom Branded Design
 							li Advanded functionality (Think Web Apps, Logins etc...)
-		.row#contact
-			.col-lg-12
-				h3 Get in touch to start your project
-			.col-lg-4.col-md-2.col-sm-2
-			.col-lg-4.col-md-8.col-sm-8
-				form(action='//formspree.io/celso@pocholabs.com', method='POST')
-					.form-group
-						input(type='text', name='name', class="form-control", placeholder="Your Name")
-					.form-group
-						input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
-					.form-group
-						textarea(type='text', name='message', class="form-control", placeholder="Your Message")
-					.form-group
-						input(type='submit', value='Send', class="form-control btn btn-primary")
-			.col-lg-4.col-md-4.col-sm-2
+
+.container-fluid.home-lead.wow.pulse
+	.row
+		.col-lg-12
+			p.lead.text-center Latin@-owned business? Organization trying to make the better world? I want to help you!
+			
+!= partial('_partials/portfolio.jade')
+
+.container#contact
+	.row
+		.col-lg-12
+			h3 Get in touch to start your project
+		.col-lg-4.col-md-2.col-sm-2
+		.col-lg-4.col-md-8.col-sm-8
+			form(action='//formspree.io/celso@pocholabs.com', method='POST')
+				.form-group
+					input(type='text', name='name', class="form-control", placeholder="Your Name")
+				.form-group
+					input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
+				.form-group
+					textarea(type='text', name='message', class="form-control", placeholder="Your Message")
+				.form-group
+					input(type='submit', value='Send', class="form-control btn btn-primary")
+		.col-lg-4.col-md-4.col-sm-2
 
 footer
 	.container-fluid
