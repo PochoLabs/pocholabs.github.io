@@ -1,14 +1,24 @@
 $(document).ready(function(){
+
+	var wHeight = $(window).height();
+
+	// Initialize WOW plugin for animations
 	new WOW().init();
 
+
+	// Animate the text in jumbo heading
 	$('.jumbo-heading').textillate({ in: { effect: 'zoomIn' } });
 
+
+	// Add animations to portfolio items on hover
 	$('.box-content').hover(function(){
 		$(this).find('i').addClass('animated').addClass('rubberBand');
 	}, function(){
 		$(this).find('i').removeClass('animated').removeClass('rubberBand');
 	})
 
+
+	// Use a scroll animation on nav menu items
 	$('.nav-link').on('click',function (e) {
 	    e.preventDefault();
 
@@ -22,10 +32,9 @@ $(document).ready(function(){
 	    });
 	});
 
-	// $('.home-lead').on('mouseenter', function(){
-	// 	$(this).addClass('animated').addClass('pulse');
-	// });
-	// $('.home-lead').on('mouseleave', function(){
-	// 	$(this).delay(3000).removeClass('animated').removeClass('pulse');
-	// });
+	// Make the jumbotron full height
+
+	$('#homejb').height( wHeight );
+
+
 });
