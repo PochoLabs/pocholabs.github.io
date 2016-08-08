@@ -36,5 +36,9 @@ $(document).ready(function(){
 
 	$('#homejb').height( wHeight );
 
+	// At top of page make Navbar transparent
+
+	
+
 
 });
