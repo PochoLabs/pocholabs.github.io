@@ -1,6 +1,6 @@
 @import url('_less/bootstrap.less');
 body {
-  padding-top: 50px;
+  //padding-top: 50px;
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -21,20 +21,59 @@ h3{
 .img-centered{
   margin: 0px auto;
 }
+.extra-padding{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 
 /* Navigation */
-.navbar-brand {
-  padding: 5px;
-  & > img {
-    height: 100%;
-    width: 210px;
-  }
-}
 
 .nav-link{
 	font-size: 1.4em;
 	font-weight: bold;
 }
+
+
+// Navbar
+
+.navbar-default{
+  background-color: rgba(250,250,250,0);
+  // background: none;
+  & .container{
+    background-color: rgba(250,250,250,0);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  & .navbar-brand {
+    padding: 5px;
+    & > img {
+      height: 115%;
+      width: 250px;
+    }
+  }
+
+
+}
+
+.navbar-shrink{
+  background-color: #38BEE5;
+  background-color: darken(#38BEE5, 20%);
+  font-size: 0.8em;
+  & .container{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  & .navbar-brand {
+    padding: 5px;
+    & > img {
+      height: 100%;
+      width: 210px;
+    }
+  }
+
+
+}
+
 
 /* Jumbotron */
 
@@ -42,8 +81,8 @@ h3{
   background: none;
   color: #fff;
   padding-left: 0px!important;
-  padding-top: 80px;
-  padding-bottom: 70px;
+  padding-top: 180px;
+  padding-bottom: 0px;
 }
 
 #homejb{
@@ -55,7 +94,7 @@ h3{
 
 /* Home Lead Sections */
 .home-lead {
-  background: @brand-secondary;
+  background: darken(@brand-primary, 20%);
   color: #fff;
   & p{
     font-style: italic;
@@ -83,6 +122,7 @@ h3{
 
 #solutions{
 	background-image: url('img/subtlenet2.png');
+  padding-bottom: 20px;
   & h1{
     margin-bottom: 25px;
   }
@@ -145,7 +185,7 @@ h3{
 		& .box-content{
 			position: absolute;
 			top: 0px;
-			background: rgba(0,0,0,0.7);
+			background: rgba(17,68,83,0.85);
 			padding: 10%;
 			height: 100%;
 			width: 100%;

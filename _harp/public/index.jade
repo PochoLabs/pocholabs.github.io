@@ -10,105 +10,112 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 				img(src="/img/logo-pocho-labs-h-white.png", alt="PochoLabs")
 		div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
 			ul.nav.navbar-nav.navbar-right
-				li
-					a.nav-link(href="#about") About
-				li
-					a.nav-link(href="#portfolio") Portfolio
+				//- li
+				//- 	a.nav-link(href="#about") About
 				li
 					a.nav-link(href="#solutions") Solutions
 				li
+					a.nav-link(href="#portfolio") Portfolio
+				li
 					a.nav-link(href="#contact") Contact
 
-#homejb
+#homejb.extra-padding
 	div.container
-		div.jumbotron
+		div.jumbotron.row
+			.col-sm-6
+				h1.jumbo-heading Creating interactive online spaces
+				p.lead Here at PochoLabs, we love merging desing and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
+				a.nav-link(href="#about", class="btn btn-success") Learn More...
+			.col-sm-6
+				//img(src="http://placehold.it/200x200", alt="")
 
-			h2.jumbo-heading Digital Solutions <em>for</em> Latinos <em>by</em> Latinos. 
-			p.lead Specializing in Online Solutions for Latino-owned businesses and Social Justice Organizations. Whether you need a website, an email campaign, or digital branding, I want to help you.
-			a.nav-link(href="#about", class="btn btn-primary") Learn More...
+			
 
 
 .container-fluid.home-lead  
 	.row
 		.col-lg-12
-			p.lead.text-center.wow.pulse Embracing the unique benefits that being a multicultural creative professional provides.
+			p.lead.text-center.wow.pulse We live to make beautiful and functionally interactive online spaces.
 
-#about      
-	div.container  
-		div.row
-			.col-md-4.col-sm-6
-				img(src="img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
-			.col-md-8.col-sm-6
-				h1 About Celso
-				p I have been a digital activist since 2009 when I was catalyzed into the undocumented youth movement because of my immigration status. Throughout my 6 years of digital organizing, I have learned digital skills that I noticed were usually missing in the immigrant community. 
-				p Through PochoLabs, my goal is to make these skills available to the immigrant community by offering various solutions for social justice organizations and immigrant-owned businesses. 
-				p This is a social enterprise, and as such, PochoLabs operates differently from other web development firms:
-				ol
-					li <strong>Creating more Latino Tech Entrepreneurs</strong>: For big projects, instead of hiring or subcontracting web developers, I instead create a partnership with other Latino-owned firms or freelancers for that specific project. Instead of offering a job, I like to offer business opportunities to fellow Latino web developers.
-					li <strong>50% of the projects are pro-bono</strong>: This is a bit radical, but necessary for both the immigrant community and for me to grow as a developer.
+//- #about.extra-padding
+//- 	div.container  
+//- 		div.row
+//- 			.col-md-4.col-sm-6
+//- 				img(src="img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
+//- 			.col-md-8.col-sm-6
+//- 				h1 About Celso
+//- 				p I have been a digital activist since 2009 when I was catalyzed into the undocumented youth movement because of my immigration status. Throughout my 6 years of digital organizing, I have learned digital skills that I noticed were usually missing in the immigrant community. 
+//- 				p Through PochoLabs, my goal is to make these skills available to the immigrant community by offering various solutions for social justice organizations and immigrant-owned businesses. 
+//- 				p This is a social enterprise, and as such, PochoLabs operates differently from other web development firms:
+//- 				ol
+//- 					li <strong>Creating more Latino Tech Entrepreneurs</strong>: For big projects, instead of hiring or subcontracting web developers, I instead create a partnership with other Latino-owned firms or freelancers for that specific project. Instead of offering a job, I like to offer business opportunities to fellow Latino web developers.
+//- 					li <strong>50% of the projects are pro-bono</strong>: This is a bit radical, but necessary for both the immigrant community and for me to grow as a developer.
+//- 
+//- 
+//- .container-fluid.home-lead.wow.pulse
+//- 	.row
+//- 		.col-lg-12
+//- 			p.lead.text-center Where passion for technology and the immigrant community meet.
 
-
-.container-fluid.home-lead.wow.pulse
-	.row
-		.col-lg-12
-			p.lead.text-center Where passion for technology and the immigrant community meet.
-
-!= partial('_partials/portfolio.jade')
-
-.container-fluid.home-lead.wow.pulse
-	.row
-		.col-lg-12
-			p.lead.text-center Latin@-owned business? Organization trying to make the better world? I want to help you!
-
-#solutions
+#solutions.extra-padding
 	.container      
 		.row
 			.col-lg-12
-				h1 For Every Stage of your Online Presence:
+				h1 Our Services Include:
 			.col-sm-4
 				.package.wow.fadeIn
 					.p-heading
-						h3.text-center Starter Package
+						h3.text-center Graphic Design
 					.p-content
+						p From wireframing to branding
 						ul
-							li Single-Page Website
-							li SEO (Search Engine Optimization)
-							li Lead Generation (Get prospective clients!)
+							li HTML 5 and CSS3
+							li Mobile-first design
+							li Focus on user experience
+							
 			.col-sm-4
 				.package.popular.wow.zoomInUp
 					.p-heading
-						h3.text-center Digital Savvy
+						h3.text-center Web Development
 					.p-content
-						p * Everything in previous package
+						p * We choose the best framework for your needs
 						ul
-
-							li Easily Editable Website (through WordPress, Nationbuilder)
-							li Multiple Pages (up to 10)
+							li Meteor.js
+							li React.js
+							li Ruby on Rails
 			.col-sm-4
 				.package.wow.fadeIn
 					.p-heading
-						h3.text-center Digital Mastermind
+						h3.text-center Project Management
 					.p-content
-						p * Everything in previous package
+						p We follow industry best practices
 						ul
+							li Scrum Development Workflow
+							li Working with various stakeholders
 
-							li Custom Branded Design
-							li Advanded functionality (Think Web Apps, Logins etc...)
-		.row#contact
-			.col-lg-12
-				h3 Get in touch to start your project
-			.col-lg-4.col-md-2.col-sm-2
-			.col-lg-4.col-md-8.col-sm-8
-				form(action='//formspree.io/celso@pocholabs.com', method='POST')
-					.form-group
-						input(type='text', name='name', class="form-control", placeholder="Your Name")
-					.form-group
-						input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
-					.form-group
-						textarea(type='text', name='message', class="form-control", placeholder="Your Message")
-					.form-group
-						input(type='submit', value='Send', class="form-control btn btn-primary")
-			.col-lg-4.col-md-4.col-sm-2
+//- .container-fluid.home-lead.wow.pulse
+//- 	.row
+//- 		.col-lg-12
+//- 			p.lead.text-center Latin@-owned business? Organization trying to make the better world? We want to help you!
+			
+!= partial('_partials/portfolio.jade')
+
+.container#contact
+	.row
+		.col-lg-12
+			h3 Get in touch to start your project
+		.col-lg-4.col-md-2.col-sm-2
+		.col-lg-4.col-md-8.col-sm-8
+			form(action='//formspree.io/celso@pocholabs.com', method='POST')
+				.form-group
+					input(type='text', name='name', class="form-control", placeholder="Your Name")
+				.form-group
+					input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
+				.form-group
+					textarea(type='text', name='message', class="form-control", placeholder="Your Message")
+				.form-group
+					input(type='submit', value='Send', class="form-control btn btn-primary")
+		.col-lg-4.col-md-4.col-sm-2
 
 footer
 	.container-fluid
