@@ -7,7 +7,8 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 				span.icon-bar
 				span.icon-bar
 			a.navbar-brand.nav-link(href="#")
-				img(src="/img/logo-pocho-labs-h-white.png", alt="PochoLabs")
+				!= partial('_partials/logo.jade')
+				//img(src="/img/logo-pocho-labs-h-white.png", alt="PochoLabs")
 		div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
 			ul.nav.navbar-nav.navbar-right
 				//- li
@@ -19,15 +20,20 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 				li
 					a.nav-link(href="#contact") Contact
 
-#homejb.extra-padding
-	div.container
-		div.jumbotron.row
-			.col-sm-6
-				h1.jumbo-heading Creating interactive online spaces
-				p.lead Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
-				a.nav-link(href="#solutions", class="btn btn-success") Learn More...
-			.col-sm-6
-				//img(src="http://placehold.it/200x200", alt="")
+section#homejb
+	.overlay
+	.extra-padding
+		div.container
+			div.jumbotron.row
+				.col-sm-6
+					h1.jumbo-heading Creating interactive online spaces
+					p.lead Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
+					a.nav-link(href="#solutions", class="btn btn-success") Learn More...
+				.col-sm-6
+					#logo-svg
+						span.icon.icon-logo-square
+						//!= partial('_partials/logo-square.jade')
+						//img(src="http://placehold.it/200x200", alt="")
 
 
 

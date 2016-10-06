@@ -34,11 +34,11 @@ $(document).ready(function(){
 
 	// Make the jumbotron full height
 
-	$('#homejb').height( wHeight );
+	//$('#homejb').height( wHeight );
 
 	// At top of page make Navbar transparent
 
-	
+
 
 
 });
