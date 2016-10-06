@@ -6,13 +6,12 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 				span.icon-bar
 				span.icon-bar
 				span.icon-bar
-			a.navbar-brand.nav-link(href="#")
+			a.navbar-brand.nav-link(href="#homejb")
 				!= partial('_partials/logo.jade')
-				//img(src="/img/logo-pocho-labs-h-white.png", alt="PochoLabs")
 		div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
 			ul.nav.navbar-nav.navbar-right
-				//- li
-				//- 	a.nav-link(href="#about") About
+				li
+					a.nav-link(href="#about") About
 				li
 					a.nav-link(href="#solutions") Solutions
 				li
@@ -26,42 +25,33 @@ section#homejb
 		div.container
 			div.jumbotron.row
 				.col-sm-6
-					h1.jumbo-heading Creating interactive online spaces
+					h1.jumbo-heading Making ideas come to life
 					p.lead Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
-					a.nav-link(href="#solutions", class="btn btn-success") Learn More...
+					a.nav-link(href="#about", class="btn btn-success") Learn More...
 				.col-sm-6
 					#logo-svg
 						span.icon.icon-logo-square
-						//!= partial('_partials/logo-square.jade')
-						//img(src="http://placehold.it/200x200", alt="")
-
-
 
 
 .container-fluid.home-lead  
 	.row
 		.col-lg-12
-			p.lead.text-center.wow.pulse We live to make beautiful and functionally interactive online spaces.
+			p.lead.text-center.wow.pulse Where passion for technology and the social justice meet.
 
-//- #about.extra-padding
-//- 	div.container  
-//- 		div.row
-//- 			.col-md-4.col-sm-6
-//- 				img(src="img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
-//- 			.col-md-8.col-sm-6
-//- 				h1 About Celso
-//- 				p I have been a digital activist since 2009 when I was catalyzed into the undocumented youth movement because of my immigration status. Throughout my 6 years of digital organizing, I have learned digital skills that I noticed were usually missing in the immigrant community. 
-//- 				p Through PochoLabs, my goal is to make these skills available to the immigrant community by offering various solutions for social justice organizations and immigrant-owned businesses. 
-//- 				p This is a social enterprise, and as such, PochoLabs operates differently from other web development firms:
-//- 				ol
-//- 					li <strong>Creating more Latino Tech Entrepreneurs</strong>: For big projects, instead of hiring or subcontracting web developers, I instead create a partnership with other Latino-owned firms or freelancers for that specific project. Instead of offering a job, I like to offer business opportunities to fellow Latino web developers.
-//- 					li <strong>50% of the projects are pro-bono</strong>: This is a bit radical, but necessary for both the immigrant community and for me to grow as a developer.
-//- 
-//- 
-//- .container-fluid.home-lead.wow.pulse
-//- 	.row
-//- 		.col-lg-12
-//- 			p.lead.text-center Where passion for technology and the immigrant community meet.
+#about.extra-padding
+	div.container  
+		div.row
+			.col-md-4.col-sm-6
+				img(src="img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
+			.col-md-8.col-sm-6
+				h1 About
+				p PochoLabs exists to bridge the gap between Latinx culture and the creative industry. We realize most small businesses and organizations and finding it increasinlgy difficult to access quality design and development services. Not to mention finding designer and developers that are passionate about your target market or social justice causes.
+				p Whether you want to stand out to your local customers, or want an engaging microsite for a social justice campaign, you can be sure we will bring our Latinx identities and creativeness to make your project vision a reality.
+
+.container-fluid.home-lead.wow.pulse
+	.row
+		.col-lg-12
+			p.lead.text-center We live to make beautiful and functionally interactive online spaces.
 
 #solutions.extra-padding
 	.container      
@@ -86,9 +76,9 @@ section#homejb
 					.p-content
 						p * We choose the best framework for your needs
 						ul
-							li Meteor.js
-							li WordPress
-							li Static Site Development
+							li Web Applications
+							li WordPress Sites
+							li Static Sites
 			.col-sm-4
 				.package.wow.fadeIn
 					.p-heading
@@ -99,10 +89,10 @@ section#homejb
 							li Scrum Development Workflow
 							li Working with various stakeholders
 
-//- .container-fluid.home-lead.wow.pulse
-//- 	.row
-//- 		.col-lg-12
-//- 			p.lead.text-center Latin@-owned business? Organization trying to make the better world? We want to help you!
+.container-fluid.home-lead.wow.pulse
+	.row
+		.col-lg-12
+			p.lead.text-center Latinx-owned business? Organization trying to make the better world? We want to help you!
 
 != partial('_partials/portfolio.jade')
 
@@ -125,5 +115,19 @@ section#homejb
 
 footer
 	.container-fluid
-		.col-lg-12
-			h5.text-center Copyright &copy; 2016. A project of Computer Dude Services LLC.
+		.row
+			.col-md-12.text-center
+				h4 Follow Us!
+		.row.social-media
+			.col-xs-4.text-center
+				a(href="https://www.facebook.com/pocholabs/" target="_blank")
+					i.fa.fa-facebook-square
+			.col-xs-4.text-center
+				a(href="https://twitter.com/pocholabs" target="_blank")
+					i.fa.fa-twitter-square
+			.col-xs-4.text-center
+				a(href="https://github.com/PochoLabs" target="_blank")
+					i.fa.fa-github-square
+		.row
+			.col-lg-12
+				h5.text-center Copyright &copy; 2016. A project of Computer Dude Services LLC.

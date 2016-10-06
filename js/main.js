@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 
 	// Animate the text in jumbo heading
-	$('.jumbo-heading').textillate({ in: { effect: 'zoomIn' } });
+	//$('.jumbo-heading').textillate({ in: { effect: 'zoomIn' } });
 
 
 	// Add animations to portfolio items on hover
@@ -34,11 +34,11 @@ $(document).ready(function(){
 
 	// Make the jumbotron full height
 
-	$('#homejb').height( wHeight );
+	//$('#homejb').height( wHeight );
 
 	// At top of page make Navbar transparent
 
-	
+
 
 
 });

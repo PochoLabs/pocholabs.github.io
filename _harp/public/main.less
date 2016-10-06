@@ -178,7 +178,7 @@ h3{
 	  background: none;
 	  color: #fff;
 	  padding-left: 0px!important;
-	  padding-top: 80px;
+	  padding-top: 100px;
 	  padding-bottom: 0px;
 	}
 }
@@ -285,6 +285,10 @@ h3{
   // background-position: center;
   padding-top: 30px;
   padding-bottom: 15px;
+	color: #525252;
+	& p{
+		font-size: 1.3em;
+	}
 }
 
 /* Solutions */
@@ -341,9 +345,11 @@ h3{
 
 #portfolio{
 	margin: 0px;
-	& .col-md-3{
+	& .item{
 		position: relative;
 		padding: 0px;
+
+
 		& .box-bg{
 			position: relative;
 			height: 100%;
@@ -356,7 +362,7 @@ h3{
 			position: absolute;
 			top: 0px;
 			background: rgba(17,68,83,0.85);
-			padding: 10%;
+			padding: 15%;
 			height: 100%;
 			width: 100%;
 			& a {
@@ -368,6 +374,9 @@ h3{
 					color: #fff;
 				}
 		}
+
+
+
 	}
 }
 
@@ -382,4 +391,25 @@ h3{
 footer{
   background: @brand-secondary;
   color: #fff;
+	padding: 40px 20px;
+
+	& .social-media{
+		a{
+			text-align: center;
+			width:100%;
+			color: #fff;
+			font-size: 4em;
+			i{
+				text-align: center;
+				-webkit-transition: all .30s;
+				-moz-transition: all .30s;
+				transition: all .30s;
+				-o-transition: all .30s;
+
+				&:hover,&:focus{
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
 }

@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 
 	// Animate the text in jumbo heading
-	$('.jumbo-heading').textillate({ in: { effect: 'zoomIn' } });
+	//$('.jumbo-heading').textillate({ in: { effect: 'zoomIn' } });
 
 
 	// Add animations to portfolio items on hover
