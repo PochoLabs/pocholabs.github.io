@@ -189,9 +189,23 @@ h3{
 	}
 }
 
+.glow{
+	// -webkit-animation: neon .5s ease-in-out infinite alternate;
+	// -moz-animation: neon .5s ease-in-out infinite alternate;
+	// animation: neon .5s ease-in-out infinite alternate;
+	// -webkit-box-shadow: 0px 0px 30px 15px rgba(255,255,255,1);
+	// -moz-box-shadow: 0px 0px 30px 15px rgba(255,255,255,1);
+	// box-shadow: 0px 0px 30px 15px rgba(255,255,255,1);
+	-webkit-filter: drop-shadow(0px 0px 30px 15px rgba(255,255,255,1));
+	filter: drop-shadow(0px 0px 30px 15px rgba(255,255,255,1));
+	-webkit-svg-shadow: 0 0 7px #53BE12;
+	//svg-shadow: 0px 0px 30px 15px rgba(255,255,255,1);
+	filter: url(#blur-filter);
+}
+
 #logo-svg{
 	text-align: center;
-	& span{
+	& .icon{
 		width:100%;
 		height:100%;
 		font-size: 30em;
@@ -214,51 +228,55 @@ h3{
 
 @keyframes neon {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
+		-webkit-box-shadow: 0px 0px 30px 15px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 0px 30px 15px rgba(255,255,255,1);
+		box-shadow: 0px 0px 30px 15px rgba(255,255,255,1);
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px @bright, 0 0 35px @bright, 0 0 40px @bright, 0 0 50px @bright, 0 0 75px @bright;
+		-webkit-box-shadow: 0px 0px 45px 15px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 0px 45px 15px rgba(255,255,255,1);
+		box-shadow: 0px 0px 45px 15px rgba(255,255,255,1);
   }
 }
 @-webkit-keyframes neon {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
+	from {
+    box-shadow: 0 0 150px @bright;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px @bright, 0 0 35px @bright, 0 0 40px @bright, 0 0 50px @bright, 0 0 75px @bright;
+    box-shadow: 0 0 75px #fff;
   }
 }
 @-moz-keyframes neon {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
+	from {
+    box-shadow: 0 0 150px @bright;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px @bright, 0 0 35px @bright, 0 0 40px @bright, 0 0 50px @bright, 0 0 75px @bright;
+    box-shadow: 0 0 75px #fff;
   }
 }
 
 @keyframes neon2 {
   from {
-    text-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px @bright, 0 0 140px @bright, 0 0 160px @bright, 0 0 200px @bright, 0 0 300px @bright;
+    box-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px @bright, 0 0 140px @bright, 0 0 160px @bright, 0 0 200px @bright, 0 0 300px @bright;
   }
   to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
   }
 }
 @-webkit-keyframes neon2 {
   from {
-    text-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px @bright, 0 0 140px @bright, 0 0 160px @bright, 0 0 200px @bright, 0 0 300px @bright;
+    box-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px @bright, 0 0 140px @bright, 0 0 160px @bright, 0 0 200px @bright, 0 0 300px @bright;
   }
   to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
   }
 }
 @-moz-keyframes neon2 {
   from {
-    text-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px @bright, 0 0 140px @bright, 0 0 160px @bright, 0 0 200px @bright, 0 0 300px @bright;
+    box-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px @bright, 0 0 140px @bright, 0 0 160px @bright, 0 0 200px @bright, 0 0 300px @bright;
   }
   to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
   }
 }
 
