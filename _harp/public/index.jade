@@ -1,3 +1,4 @@
+!= partial('_partials/p-items/opt.jade')
 nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 	div.container
 		div.navbar-header
@@ -30,8 +31,9 @@ section#homejb
 					a.nav-link(href="#about", class="btn btn-success") Learn More...
 				.col-sm-6
 					#logo-svg
-						img.glow.img-responsive(src="img/logo-square.svg", alt="Pocholabs")
-						!= partial('_partials/logo-square.jade')
+						//- img.img-responsive(src="img/optimised.svg", alt="Pocholabs")
+						svg(style="animation: glow 1.4s ease-in-out infinite alternate;", preserveAspectRatio="xMidYMid meet", height="400", width="400")
+							use(xlink:href="#svg-logo")
 
 
 .container-fluid.home-lead  
