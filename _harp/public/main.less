@@ -1,5 +1,6 @@
 @import url('_less/bootstrap.less');
 @import url('fonts/pocholabs.css');
+
 html{
 	height: 100%;
 }
@@ -208,6 +209,18 @@ h3{
 		}
 
 	}
+}
+
+@media screen and (max-width: 580px) {
+ #logo-svg > span {
+	 text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @bright, 0 0 70px @bright, 0 0 80px @bright, 0 0 100px @bright, 0 0 150px @bright;
+	 font-size: 15em;
+	 -webkit-animation: none !important;
+	 -moz-animation: none !important;
+	 -o-animation: none !important;
+	 -ms-animation: none !important;
+	 animation: none !important;
+ }
 }
 
 @bright: lighten(@brand-primary, 10%);
