@@ -9,11 +9,40 @@ svg(version='1.1', width="0", height="0", display="none", xmlns='http://www.w3.o
 		}
 		@keyframes glow {
 			from {
-				filter: drop-shadow(0 0 10px #ffffff);
+				filter: drop-shadow(0 0 1px #ffffff);	
 			}
 			to {
-				filter: drop-shadow(0 0 30px #ffffff);
+				filter: drop-shadow(0 0 5px #fff);
 			}
+		}
+		@keyframes glow2 {
+			from {
+				filter: drop-shadow(0 0 40px #fff);	
+			}
+			to {
+				filter: drop-shadow(0 0 100px #48c3e7);
+			}
+		}
+		@keyframes glow3 {
+			from {
+				filter: drop-shadow(0 0 60px #fff);	
+			}
+			to {
+				filter: drop-shadow(0 0 160px #48c3e7);
+			}
+		}
+
+
+
+
+
+
+		@keyframes glowx {
+			from {
+				box-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px #48c3e7, 0 0 140px #48c3e7, 0 0 160px #48c3e7, 0 0 200px #48c3e7, 0 0 300px #48c3e7;
+			}
+			to {
+				box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #48c3e7, 0 0 70px #48c3e7, 0 0 80px #48c3e7, 0 0 100px #48c3e7, 0 0 150px #48c3e7;
 		}
 		@keyframes throb {
 		from {
