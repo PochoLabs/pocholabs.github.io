@@ -1,23 +1,24 @@
-console.log('You have work to do...');
-
+AOS.init({
+  duration: 1200
+});
 // Nav menu
 
 var hamburger = document.querySelector('i.fa-bars');
 var collapsibleNav = document.querySelector('#collapsible-nav');
 var navLinks = document.querySelectorAll('a.nav-link');
+var isVisible = collapsibleNav.dataset.visible === 'visible';
 
 hamburger.addEventListener('click', function() {
-  var isVisible = this.dataset.visible === 'visible';
-  console.log('hamburger clicked');
+  var collapsibleNav = document.querySelector('#collapsible-nav');
+  var navLinks = document.querySelectorAll('a.nav-link');
+  var isVisible = collapsibleNav.dataset.visible === 'visible';
 
   if(isVisible) {
-    console.log('hide nav');
     collapsibleNav.classList.remove('display');
-    this.setAttribute('data-visible', 'hidden');
+    collapsibleNav.setAttribute('data-visible', 'hidden');
   } else {
-    console.log('make visible');
     collapsibleNav.classList.add('display');
-    this.setAttribute('data-visible', 'visible');
+    collapsibleNav.setAttribute('data-visible', 'visible');
   }
 });
 

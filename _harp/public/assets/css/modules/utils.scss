@@ -63,3 +63,28 @@ section {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $bright, 0 0 35px $bright, 0 0 40px $bright, 0 0 50px $bright, 0 0 75px $bright;
   }
 }
+
+@keyframes fade {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+@-moz-keyframes fade {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}

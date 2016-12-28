@@ -1,7 +1,7 @@
 nav(role="navigation")
 	.navbar-header
 		i.fa.fa-bars
-		a.navbar-brand.nav-link(href="#homejb")
+		a.navbar-brand.nav-link(href="#top")
 			!= partial('_partials/logo.jade')
 	#collapsible-nav(data-visible="hidden")
 		.overlay.orange
@@ -15,7 +15,7 @@ nav(role="navigation")
 			.link
 				a.nav-link(href="#contact") Contact
 
-header
+header#top
 	.overlay.blue
 	.container
 		.row
@@ -23,7 +23,7 @@ header
 				h1 Making ideas come to life
 				p.sm-hidden Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
 			.column.column-6
-				#logo-svg
+				#logo-svg(data-aos="flip-down")
 					span.icon.icon-logo-square
 
 section#about
