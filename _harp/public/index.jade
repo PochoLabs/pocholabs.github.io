@@ -3,15 +3,16 @@ nav(role="navigation")
 		i.fa.fa-bars
 		a.navbar-brand.nav-link(href="#homejb")
 			!= partial('_partials/logo.jade')
-	#collapsible-nav
-		ul.nav.navbar-right
-			li
+	#collapsible-nav(data-visible="hidden")
+		.overlay.orange
+		.nav
+			.link
 				a.nav-link(href="#about") About
-			li
-				a.nav-link(href="#solutions") Solutions
-			li
+			.link
+				a.nav-link(href="#services") Services
+			.link
 				a.nav-link(href="#portfolio") Portfolio
-			li
+			.link
 				a.nav-link(href="#contact") Contact
 
 header
