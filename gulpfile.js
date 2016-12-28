@@ -19,6 +19,17 @@ var paths = {
 	harpCompiled: 'www/'
 };
 
+gulp.task('setup', function(){
+	gulp.src('node_modules/aos/dist/aos.css')
+		.pipe(gulp.dest('_harp/public/assets/css/'));
+
+	gulp.src('node_modules/aos/dist/aos.js')
+		.pipe(gulp.dest('_harp/public/assets/js/'));
+
+	gulp.src('node_modules/smoothscroll-polyfill/dist/smoothscroll.js')
+    .pipe(gulp.dest('_harp/public/assets/js/'));
+});
+
 
 // Live Reload
 
@@ -60,8 +71,8 @@ gulp.task('serve', function () {
 gulp.task('compile', function() {
 	return harp.compile(paths.harp , paths.harpCompiled, function() {
 		// After compiling with harp, move to root directory
-		// gulp.src('_harp/www/**/**/*')
-		// 	.pipe(gulp.dest('./'));
+		gulp.src('_harp/www/**/**/*')
+			.pipe(gulp.dest('./'));
 	});
 
 });
