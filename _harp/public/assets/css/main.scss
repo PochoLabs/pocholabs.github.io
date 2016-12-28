@@ -8,6 +8,7 @@
 @import 'modules/modal';
 @import 'modules/grid';
 @import 'modules/buttons';
+@import 'modules/forms';
 
 @import 'aos';
 
@@ -213,6 +214,16 @@ header {
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
+}
+
+#contact {
+  background: $color-orange;
+  color: #fff;
+  form {
+    min-width: 300px;
+    max-width: 800px;
+    margin: 0px auto;
+  }
 }
 
 footer {

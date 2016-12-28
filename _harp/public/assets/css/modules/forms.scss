@@ -1,0 +1,34 @@
+form {
+	width: 100%;
+	.form-group {
+		width: 100%;
+		input, textarea {
+			width: 100%;
+			border: 3px solid #fff;
+			background: none;
+			padding: 15px;
+			margin: 3px auto;
+      color: #fff;
+      font-size: 16px;
+      &::placeholder{
+        color: #fff;
+        font-size: 16px;
+      }
+      &:focus {
+        box-shadow: 0px 0px 14px #fff;
+        outline-color: #fff;
+      }
+		}
+    input[type="submit"] {
+      border-radius: 5px;
+      background: #fff;
+      color: $color-black;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+	}
+}
