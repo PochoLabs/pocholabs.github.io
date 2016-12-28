@@ -41,10 +41,12 @@ nav {
 }
 
 header {
+  position: relative;
   background-image: url('../img/m.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   color: #fff;
   svg {
@@ -54,7 +56,11 @@ header {
 }
 
 #services {
-  background: $color-blue;
+  background: url('../img/rm7fqriqb94-oliur-rahman.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #fff;
 }
 
