@@ -1,0 +1,23 @@
+.img-responsive {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+
+  &.black {
+    background-color: rgba(0,0,0,0.8);
+  }
+  &.blue {
+    background-color: rgba(56, 190, 230, 0.8);
+  }
+  &.white {
+    background-color: rgba(250,250,250,0.8);
+  }
+}

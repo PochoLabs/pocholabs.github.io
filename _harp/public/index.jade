@@ -15,17 +15,15 @@ nav(role="navigation")
 				a.nav-link(href="#contact") Contact
 
 header#homejb
-	.overlay
-	.extra-padding
-		.container
-			.row
-				.column.column-6
-					h1.jumbo-heading Making ideas come to life
-					p.lead Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
-					a.nav-link(href="#about", class="btn btn-success") Learn More...
-				.column.column-6
-					#logo-svg
-						span.icon.icon-logo-square
+	.overlay.blue
+	.container
+		.row
+			.column.column-6
+				h1.jumbo-heading Making ideas come to life
+				p.lead Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
+				a.nav-link(href="#about", class="btn btn-success") Learn More...
+			.column.column-6
+				!= partial('_partials/logo-square.jade')
 
 
 .container.home-lead  
