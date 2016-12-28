@@ -12,6 +12,10 @@
 
 @import 'aos';
 
+h1, h2 {
+  font-weight: bolder;
+}
+
 nav {
   .navbar-header {
     background: $color-orange;
@@ -186,6 +190,7 @@ header {
   h1, p {
     margin: 20px auto;
     text-align: center;
+    font-weight: normal;
   }
 
   #logo-svg{
@@ -234,6 +239,18 @@ section{
   background-attachment: fixed;
   color: #fff;
   min-height: 100vh;
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  .package {
+    margin: 40px auto;
+    text-align: center;
+    li {
+      list-style: none;
+    }
+  }
 }
 
 #portfolio{
