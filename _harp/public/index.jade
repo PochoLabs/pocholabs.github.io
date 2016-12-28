@@ -1,6 +1,6 @@
-nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
-	div.container
-		div.navbar-header
+nav(role="navigation")
+	.container
+		.navbar-header
 			button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
 				span.sr-only Toggle navigation
 				span.icon-bar
@@ -8,7 +8,7 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 				span.icon-bar
 			a.navbar-brand.nav-link(href="#homejb")
 				!= partial('_partials/logo.jade')
-		div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+		.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
 			ul.nav.navbar-nav.navbar-right
 				li
 					a.nav-link(href="#about") About
@@ -19,11 +19,11 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 				li
 					a.nav-link(href="#contact") Contact
 
-section#homejb
+header#homejb
 	.overlay
 	.extra-padding
-		div.container
-			div.jumbotron.row
+		.container
+			.row
 				.col-sm-6
 					h1.jumbo-heading Making ideas come to life
 					p.lead Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
@@ -33,14 +33,14 @@ section#homejb
 						span.icon.icon-logo-square
 
 
-.container-fluid.home-lead  
+.container.home-lead  
 	.row
 		.col-lg-12
 			p.lead.text-center.wow.pulse Where passion for technology and the social justice meet.
 
-#about.extra-padding
-	div.container  
-		div.row
+section#about.extra-padding
+	.container  
+		.row
 			.col-md-4.col-sm-6
 				img(src="assets/img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
 			.col-md-8.col-sm-6
@@ -48,12 +48,12 @@ section#homejb
 				p PochoLabs exists to bridge the gap between Latinx culture and the creative industry. We realize most small businesses and organizations and finding it increasinlgy difficult to access quality design and development services. Not to mention finding designer and developers that are passionate about your target market or social justice causes.
 				p Whether you want to stand out to your local customers, or want an engaging microsite for a social justice campaign, you can be sure we will bring our Latinx identities and creativeness to make your project vision a reality.
 
-.container-fluid.home-lead.wow.pulse
+.container.home-lead
 	.row
 		.col-lg-12
 			p.lead.text-center We live to make beautiful and functionally interactive online spaces.
 
-#solutions.extra-padding
+section#solutions.extra-padding
 	.container      
 		.row
 			.col-lg-12
@@ -70,7 +70,7 @@ section#homejb
 							li Focus on user experience
 
 			.col-sm-4
-				.package.popular.wow.zoomInUp
+				.package.popular
 					.p-heading
 						h3.text-center Web Development
 					.p-content
@@ -80,7 +80,7 @@ section#homejb
 							li WordPress Sites
 							li Static Sites
 			.col-sm-4
-				.package.wow.fadeIn
+				.package
 					.p-heading
 						h3.text-center Project Management
 					.p-content
@@ -89,14 +89,14 @@ section#homejb
 							li Scrum Development Workflow
 							li Working with various stakeholders
 
-.container-fluid.home-lead.wow.pulse
+.container.home-lead
 	.row
 		.col-lg-12
 			p.lead.text-center Latinx-owned business? Organization trying to make the better world? We want to help you!
 
 
 
-.container#contact
+section#contact.container
 	.row
 		.col-lg-12
 			h3 Get in touch to start your project
@@ -114,7 +114,7 @@ section#homejb
 		.col-lg-4.col-md-4.col-sm-2
 
 footer
-	.container-fluid
+	.container
 		.row
 			.col-md-12.text-center
 				h4 Follow Us!
