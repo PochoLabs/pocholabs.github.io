@@ -4,6 +4,8 @@ $color-white: #ececec;
 $color-blue: #38BEE5;
 $color-orange: #eb6810;
 
+$bright: lighten($color-blue, 10%);
+
 $anim-timing-service: 0.5s;
 
 $break-large: 1000px;

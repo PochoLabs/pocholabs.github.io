@@ -1,6 +1,7 @@
 //@import 'font-awesome.min';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
+@import '../fonts/pocholabs.css';
 @import 'modules/variables';
 @import 'modules/reset';
 @import 'modules/utils';
@@ -81,10 +82,49 @@ header {
   background-attachment: fixed;
   height: 100vh;
   color: #fff;
+  @media screen and (min-width: 480px) {
+    .row {
+      padding-top: 160px;
+    }
+  }
   svg {
     width: 100%;
     height: auto;
   }
+
+  h1, p {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  #logo-svg{
+	text-align: center;
+  margin-top: 40px;
+
+	& span{
+
+		font-size: 15em;
+    text-align: center;
+		-webkit-animation: neon .5s ease-in-out infinite alternate;
+		-moz-animation: neon .5s ease-in-out infinite alternate;
+		animation: neon .5s ease-in-out infinite alternate;
+    @media screen and (min-width: 480px) {
+      font-size: 23em;
+    }
+	}
+}
+
+// @media screen and (max-width: 580px) {
+//  #logo-svg > span {
+// 	 text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $bright, 0 0 70px $bright, 0 0 80px $bright, 0 0 100px $bright, 0 0 150px $bright;
+// 	 font-size: 15em;
+// 	 -webkit-animation: none !important;
+// 	 -moz-animation: none !important;
+// 	 -ms-animation: none !important;
+// 	 animation: none !important;
+//  }
+// }
+
 }
 
 #services {

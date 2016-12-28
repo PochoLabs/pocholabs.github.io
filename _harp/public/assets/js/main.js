@@ -21,8 +21,9 @@ hamburger.addEventListener('click', function() {
   }
 });
 
-navLinks.forEach(link => link.addEventListener('click', function(){
+navLinks.forEach(link => link.addEventListener('click', function(e){
   console.log('hide nav');
   collapsibleNav.classList.remove('display');
   collapsibleNav.setAttribute('data-visible', 'hidden');
+  console.log(e);
 }));
