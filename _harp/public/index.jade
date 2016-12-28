@@ -1,65 +1,54 @@
-nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
-	div.container
-		div.navbar-header
-			button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
-				span.sr-only Toggle navigation
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
-			a.navbar-brand.nav-link(href="#homejb")
-				!= partial('_partials/logo.jade')
-		div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
-			ul.nav.navbar-nav.navbar-right
-				li
-					a.nav-link(href="#about") About
-				li
-					a.nav-link(href="#solutions") Solutions
-				li
-					a.nav-link(href="#portfolio") Portfolio
-				li
-					a.nav-link(href="#contact") Contact
+nav(role="navigation")
+	.navbar-header
+		i.fa.fa-bars
+		a.navbar-brand.nav-link(href="#top")
+			!= partial('_partials/logo.jade')
+	#collapsible-nav(data-visible="hidden")
+		.overlay.orange
+		.nav
+			.link
+				a.nav-link(href="#about") About
+			.link
+				a.nav-link(href="#services") Services
+			.link
+				a.nav-link(href="#portfolio") Portfolio
+			.link
+				a.nav-link(href="#contact") Contact
 
-section#homejb
-	.overlay
-	.extra-padding
-		div.container
-			div.jumbotron.row
-				.col-sm-6
-					h1.jumbo-heading Making ideas come to life
-					p.lead Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
-					a.nav-link(href="#about", class="btn btn-success") Learn More...
-				.col-sm-6
-					#logo-svg
-						span.icon.icon-logo-square
+header#top
+	.overlay.blue
+	.container
+		.row
+			.column.column-6
+				h1 Making ideas come to life
+				p.sm-hidden Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
+			.column.column-6
+				#logo-svg(data-aos="flip-down")
+					span.icon.icon-logo-square
 
-
-.container-fluid.home-lead  
-	.row
-		.col-lg-12
-			p.lead.text-center.wow.pulse Where passion for technology and the social justice meet.
-
-#about.extra-padding
-	div.container  
-		div.row
-			.col-md-4.col-sm-6
-				img(src="img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
-			.col-md-8.col-sm-6
+section#about
+	.container  
+		.row
+			.column.column-4
+				img.img-responsive.img-circle(src="assets/img/celso-circle.jpg", alt="Celso Mireles")
+			.column.column-8
 				h1 About
 				p PochoLabs exists to bridge the gap between Latinx culture and the creative industry. We realize most small businesses and organizations and finding it increasinlgy difficult to access quality design and development services. Not to mention finding designer and developers that are passionate about your target market or social justice causes.
 				p Whether you want to stand out to your local customers, or want an engaging microsite for a social justice campaign, you can be sure we will bring our Latinx identities and creativeness to make your project vision a reality.
 
-.container-fluid.home-lead.wow.pulse
-	.row
-		.col-lg-12
-			p.lead.text-center We live to make beautiful and functionally interactive online spaces.
-
-#solutions.extra-padding
+section#services
+	.overlay.blue
 	.container      
 		.row
-			.col-lg-12
-				h1 Our Services Include:
-			.col-sm-4
-				.package.wow.fadeIn
+			.column.column-12
+				h1 Services
+
+		.package
+			.row
+				.column.column-4
+					img.img-responsive.img-circle.img-centered(src="assets/img/graphic-design.jpg")
+
+				.column.column-8
 					.p-heading
 						h3.text-center Graphic Design
 					.p-content
@@ -69,18 +58,27 @@ section#homejb
 							li Mobile-first design
 							li Focus on user experience
 
-			.col-sm-4
-				.package.popular.wow.zoomInUp
+
+		.package
+			.row
+				.column.column-8
 					.p-heading
-						h3.text-center Web Development
+						h3.text-center Web Development 
 					.p-content
 						p * We choose the best framework for your needs
 						ul
 							li Web Applications
 							li WordPress Sites
 							li Static Sites
-			.col-sm-4
-				.package.wow.fadeIn
+				.column.column-4     
+					img.img-responsive.img-circle.img-centered(src="assets/img/coding.jpg")
+
+
+		.package
+			.row
+				.column.column-4
+					img.img-responsive.img-circle.img-centered(src="assets/img/management.jpg")
+				.column.column-8
 					.p-heading
 						h3.text-center Project Management
 					.p-content
@@ -89,45 +87,87 @@ section#homejb
 							li Scrum Development Workflow
 							li Working with various stakeholders
 
-.container-fluid.home-lead.wow.pulse
-	.row
-		.col-lg-12
-			p.lead.text-center Latinx-owned business? Organization trying to make the better world? We want to help you!
+section#portfolio
+	.container
+		.row
+			.column.column-12
+				h1 Portfolio
+		.row
+			.column.column-12
+				.p-item
+					img.img-responsive(src="assets/img/portfolio/immigration-wizard.jpg", alt="Immigration Wizard")
+					.overlay.black
+					a(href="https://immigration-wizard.abogadoray.com", target="_blank")
+						.content
+							h3.text-center Immigration Wizard
 
-!= partial('_partials/portfolio.jade')
 
-.container#contact
-	.row
-		.col-lg-12
-			h3 Get in touch to start your project
-		.col-lg-4.col-md-2.col-sm-2
-		.col-lg-4.col-md-8.col-sm-8
-			form(action='//formspree.io/celso@pocholabs.com', method='POST')
-				.form-group
-					input(type='text', name='name', class="form-control", placeholder="Your Name")
-				.form-group
-					input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
-				.form-group
-					textarea(type='text', name='message', class="form-control", placeholder="Your Message")
-				.form-group
-					input(type='submit', value='Send', class="form-control btn btn-primary")
-		.col-lg-4.col-md-4.col-sm-2
+		.row    
+			.column.column-6
+				.p-item
+					img.img-responsive(src="assets/img/portfolio/sonora-tire-shop.jpg", alt="")
+					.overlay.black
+					a(href="http://sonoratires.com", target="_blank")
+						.content
+							h3.text-center Sonora Tire Shop
+			.column.column-6
+				.p-item
+					img.img-responsive(src="assets/img/portfolio/purple-rose-services.jpg", alt="")
+					.overlay.black
+					a(href="http://purplerosetranslations.com", target="_blank")
+						.content
+							h3.text-center Purple Rose Services
+
+		.row    
+			.column.column-6
+				.p-item
+					img.img-responsive(src="assets/img/portfolio/fvaldez.jpg", alt="")
+					.overlay.black
+					a(href="http://purplerosetranslations.com", target="_blank")
+						.content
+							h3.text-center Frances Valdez
+
+			.column.column-6
+				.p-item
+					img.img-responsive(src="assets/img/portfolio/ileana-y-celso.jpg", alt="")
+					.overlay.black
+					a(href="http://ileanaycelso.com", target="_blank")
+						.content
+							h3.text-center Ileana Y Celso
+
+
+section#contact
+	.container
+		.row
+			.column.column-12
+				h1 Get in touch to start your project
+		.row
+			.column.column-12
+				form(action='//formspree.io/celso@pocholabs.com', method='POST')
+					.form-group
+						input(type='text', name='name', class="form-control", placeholder="Your Name")
+					.form-group
+						input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
+					.form-group
+						textarea(type='text', name='message', class="form-control", placeholder="Your Message")
+					.form-group
+						input(type='submit', value='Send', class="form-control")
 
 footer
-	.container-fluid
+	.container
 		.row
-			.col-md-12.text-center
-				h4 Follow Us!
+			.column.column-12.text-center
+				h2 Follow Us!
 		.row.social-media
-			.col-xs-4.text-center
+			.column.column-4.text-center
 				a(href="https://www.facebook.com/pocholabs/" target="_blank")
 					i.fa.fa-facebook-square
-			.col-xs-4.text-center
+			.column.column-4.text-center
 				a(href="https://twitter.com/pocholabs" target="_blank")
 					i.fa.fa-twitter-square
-			.col-xs-4.text-center
+			.column.column-4.text-center
 				a(href="https://github.com/PochoLabs" target="_blank")
 					i.fa.fa-github-square
 		.row
-			.col-lg-12
-				h5.text-center Copyright &copy; 2016. A project of Computer Dude Services LLC.
+			.column.column-12
+				p.text-center Copyright &copy; 2016. A project of Computer Dude Services LLC.

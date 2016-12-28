@@ -3,14 +3,15 @@ html(lang="en")
 	head
 		title PochoLabs | Web App Development
 		link(rel='manifest', href='manifest.json')
-		link(rel="stylesheet" href="css/animate.min.css")
+		//link(rel="stylesheet", href="assets/css/font-awesome.min.css")
+		link(rel="stylesheet", href="assets/fonts/pocholabs.css")
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
 
-		link(rel="stylesheet" href="main.css")
+		link(rel="stylesheet" href="assets/css/main.css")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		meta(property='og:title', content='PochoLabs Web Design')
 
-		meta(property='og:image', content='http://pocholabs.com/img/pocho-labs-web-design.jpg')
+		meta(property='og:image', content='http://pocholabs.com/assets/img/pocho-labs-web-design.jpg')
 		meta(property='og:site_name', content='PochoLabs Web Design')
 		meta(property='og:description', content="Accessible, quality design for small businesses and organizations serving Latinos.")
 		meta(property='og:url', content='http://pocholabs.com/')
@@ -25,14 +26,9 @@ html(lang="en")
 
 		!= yield
 
-		script(src="js/jquery-2.1.4.js")
-		script(src="js/bootstrap.min.js")
-		script(src="js/wow.min.js")
-		script(src="js/jquery.lettering.js")
-		script(src="js/jquery.textillate.js")
-		script(src="js/classie.js")
-		script(src="js/cpbAnimatedHeader.js")
-		script(src="js/main.js")
+		script(src="assets/js/aos.js")
+		script(src="assets/js/smoothscroll.js")
+		script(src="assets/js/main.js")
 		script.
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,0 +1,65 @@
+.img-responsive {
+  width: 100%;
+}
+
+.img-circle {
+  border-radius: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+
+  &.black {
+    background-color: rgba(0,0,0,0.8);
+  }
+  &.blue {
+    background-color: rgba(56, 190, 230, 0.8);
+  }
+  &.white {
+    background-color: rgba(250,250,250,0.8);
+  }
+  &.orange {
+    background-color: rgba(235, 104, 16, 0.8);
+  }
+}
+
+section {
+  position: relative;
+  padding: 30px 0px;
+}
+
+
+// @keyframes neon {
+//   from {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $bright, 0 0 70px $bright, 0 0 80px $bright, 0 0 100px $bright, 0 0 150px $bright;
+//   }
+//   to {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $bright, 0 0 35px $bright, 0 0 40px $bright, 0 0 50px $bright, 0 0 75px $bright;
+//   }
+// }
+// @-webkit-keyframes neon {
+//   from {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $bright, 0 0 70px $bright, 0 0 80px $bright, 0 0 100px $bright, 0 0 150px $bright;
+//   }
+//   to {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $bright, 0 0 35px $bright, 0 0 40px $bright, 0 0 50px $bright, 0 0 75px $bright;
+//   }
+// }
+// @-moz-keyframes neon {
+//   from {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $bright, 0 0 70px $bright, 0 0 80px $bright, 0 0 100px $bright, 0 0 150px $bright;
+//   }
+//   to {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $bright, 0 0 35px $bright, 0 0 40px $bright, 0 0 50px $bright, 0 0 75px $bright;
+//   }
+// }
