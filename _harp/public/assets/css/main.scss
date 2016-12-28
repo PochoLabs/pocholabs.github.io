@@ -12,15 +12,15 @@
 
 nav {
   .navbar-header {
-    background: $color-blue;
-    border-top: 2px solid darken(#38BEE5, 10%);
+    background: $color-orange;
+    border-top: 2px solid darken(#eb6810, 10%);
     width: 100%;
     position: fixed;
     left: 0px;
     z-index: 10;
     bottom: 0px;
     padding: 5px 25px;
-    box-shadow: 0px 0px 15px rgba(#000000, 0.6);;
+    box-shadow: 0px 0px 25px rgba(#000000, 0.6);;
     i.fa-bars {
       margin: 10px 0px;
       font-size: 2.5em;
@@ -49,6 +49,23 @@ header {
   color: #fff;
   svg {
     width: 100%;
-    height: 100%;
+    height: auto;
+  }
+}
+
+#services {
+  background: $color-blue;
+  color: #fff;
+}
+
+footer {
+  background: $color-black;
+  color: #fff;
+  padding: 30px 10px 80px 10px;
+
+  .social-media {
+    a {
+      color: #fff;
+    }
   }
 }

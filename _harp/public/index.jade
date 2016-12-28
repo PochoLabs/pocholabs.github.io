@@ -19,92 +19,75 @@ header#homejb
 	.container
 		.row
 			.column.column-6
-				h1.jumbo-heading Making ideas come to life
-				p.lead Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
-				a.nav-link(href="#about", class="btn btn-success") Learn More...
+				h1 Making ideas come to life
+				p Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
 			.column.column-6
 				!= partial('_partials/logo-square.jade')
 
-
-.container.home-lead  
-	.row
-		.column.column-12
-			p.lead.text-center.wow.pulse Where passion for technology and the social justice meet.
-
-section#about.extra-padding
+section#about
 	.container  
 		.row
 			.column.column-4
-				img.img-responsive(src="assets/img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
+				img.img-responsive.img-circle(src="assets/img/celso-circle.jpg", alt="Celso Mireles")
 			.column.column-8
 				h1 About
 				p PochoLabs exists to bridge the gap between Latinx culture and the creative industry. We realize most small businesses and organizations and finding it increasinlgy difficult to access quality design and development services. Not to mention finding designer and developers that are passionate about your target market or social justice causes.
 				p Whether you want to stand out to your local customers, or want an engaging microsite for a social justice campaign, you can be sure we will bring our Latinx identities and creativeness to make your project vision a reality.
 
-.container.home-lead
-	.row
-		.column.column-12
-			p.lead.text-center We live to make beautiful and functionally interactive online spaces.
-
-section#solutions.extra-padding
+section#services
 	.container      
 		.row
 			.column.column-12
-				h1 Our Services Include:
+				h1 Services
 			.column.column-4
 				.package
 					.p-heading
 						h3.text-center Graphic Design
-					.p-content
-						p From wireframing to branding
-						ul
-							li HTML 5 and CSS3
-							li Mobile-first design
-							li Focus on user experience
+					//- .p-content
+					//- 	p From wireframing to branding
+					//- 	ul
+					//- 		li HTML 5 and CSS3
+					//- 		li Mobile-first design
+					//- 		li Focus on user experience
 
 			.column.column-4
 				.package.popular
 					.p-heading
 						h3.text-center Web Development
-					.p-content
-						p * We choose the best framework for your needs
-						ul
-							li Web Applications
-							li WordPress Sites
-							li Static Sites
+					//- .p-content
+					//- 	p * We choose the best framework for your needs
+					//- 	ul
+					//- 		li Web Applications
+					//- 		li WordPress Sites
+					//- 		li Static Sites
 			.column.column-4
 				.package
 					.p-heading
 						h3.text-center Project Management
-					.p-content
-						p We follow industry best practices
-						ul
-							li Scrum Development Workflow
-							li Working with various stakeholders
-
-.container.home-lead
-	.row
-		.column.column-12
-			p.lead.text-center Latinx-owned business? Organization trying to make the better world? We want to help you!
+					//- .p-content
+					//- 	p We follow industry best practices
+					//- 	ul
+					//- 		li Scrum Development Workflow
+					//- 		li Working with various stakeholders
 
 
-
-section#contact.container
-	.row
-		.column.column-12
-			h3 Get in touch to start your project
-		.column.column-4
-		.column.column-4.column.column-8.column.column-8
-			form(action='//formspree.io/celso@pocholabs.com', method='POST')
-				.form-group
-					input(type='text', name='name', class="form-control", placeholder="Your Name")
-				.form-group
-					input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
-				.form-group
-					textarea(type='text', name='message', class="form-control", placeholder="Your Message")
-				.form-group
-					input(type='submit', value='Send', class="form-control btn btn-primary")
-		.column.column-4
+section#contact
+	.container
+		.row
+			.column.column-12
+				h3 Get in touch to start your project
+			.column.column-4
+			.column.column-4.column.column-8.column.column-8
+				form(action='//formspree.io/celso@pocholabs.com', method='POST')
+					.form-group
+						input(type='text', name='name', class="form-control", placeholder="Your Name")
+					.form-group
+						input(type='email', name='_replyto', class="form-control", placeholder="Your Email")
+					.form-group
+						textarea(type='text', name='message', class="form-control", placeholder="Your Message")
+					.form-group
+						input(type='submit', value='Send', class="form-control btn btn-primary")
+			.column.column-4
 
 footer
 	.container
@@ -123,4 +106,4 @@ footer
 					i.fa.fa-github-square
 		.row
 			.column.column-12
-				h5.text-center Copyright &copy; 2016. A project of Computer Dude Services LLC.
+				p.text-center Copyright &copy; 2016. A project of Computer Dude Services LLC.
