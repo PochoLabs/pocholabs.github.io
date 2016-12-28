@@ -234,6 +234,15 @@ footer {
   .social-media {
     a {
       color: #fff;
+      text-align: center;
+      width:100%;
+      &:hover {
+        color: $color-blue;
+      }
+      i {
+        text-align: center;
+        font-size: 5em;
+      }
     }
   }
 }
