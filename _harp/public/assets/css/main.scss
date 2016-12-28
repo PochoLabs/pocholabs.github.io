@@ -8,3 +8,36 @@
 @import 'modules/buttons';
 
 @import 'aos';
+
+.img-responsive {
+  width: 100%;
+}
+
+nav {
+  .navbar-header {
+    background: $color-blue;
+    border-top: 2px solid darken(#38BEE5, 5%);
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    z-index: 10;
+    bottom: 0px;
+    padding: 5px 25px;
+    i.fa-bars {
+      margin: 10px 0px;
+      font-size: 2.5em;
+      color: #fff;
+    }
+    a.navbar-brand {
+      padding: 0px 20px;
+      #logo-svg {
+        width: 200px;
+        position: absolute;
+        height: 50px;
+      }
+    }
+  }
+  #collapsible-nav {
+    display: none;
+  }
+}

@@ -1,65 +1,60 @@
 nav(role="navigation")
-	.container
-		.navbar-header
-			button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
-				span.sr-only Toggle navigation
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
-			a.navbar-brand.nav-link(href="#homejb")
-				!= partial('_partials/logo.jade')
-		.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
-			ul.nav.navbar-nav.navbar-right
-				li
-					a.nav-link(href="#about") About
-				li
-					a.nav-link(href="#solutions") Solutions
-				li
-					a.nav-link(href="#portfolio") Portfolio
-				li
-					a.nav-link(href="#contact") Contact
+	.navbar-header
+		i.fa.fa-bars
+		a.navbar-brand.nav-link(href="#homejb")
+			!= partial('_partials/logo.jade')
+	#collapsible-nav
+		ul.nav.navbar-right
+			li
+				a.nav-link(href="#about") About
+			li
+				a.nav-link(href="#solutions") Solutions
+			li
+				a.nav-link(href="#portfolio") Portfolio
+			li
+				a.nav-link(href="#contact") Contact
 
 header#homejb
 	.overlay
 	.extra-padding
 		.container
 			.row
-				.col-sm-6
+				.column.column-6
 					h1.jumbo-heading Making ideas come to life
 					p.lead Here at PochoLabs, we love merging design and function to create beautiful online spaces for our clients. From custom made web applications, to online portals.
 					a.nav-link(href="#about", class="btn btn-success") Learn More...
-				.col-sm-6
+				.column.column-6
 					#logo-svg
 						span.icon.icon-logo-square
 
 
 .container.home-lead  
 	.row
-		.col-lg-12
+		.column.column-12
 			p.lead.text-center.wow.pulse Where passion for technology and the social justice meet.
 
 section#about.extra-padding
 	.container  
 		.row
-			.col-md-4.col-sm-6
-				img(src="assets/img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
-			.col-md-8.col-sm-6
+			.column.column-4
+				img.img-responsive(src="assets/img/celso-circle.jpg", alt="Celso Mireles", class="img-circle img-centered img-responsive")
+			.column.column-8
 				h1 About
 				p PochoLabs exists to bridge the gap between Latinx culture and the creative industry. We realize most small businesses and organizations and finding it increasinlgy difficult to access quality design and development services. Not to mention finding designer and developers that are passionate about your target market or social justice causes.
 				p Whether you want to stand out to your local customers, or want an engaging microsite for a social justice campaign, you can be sure we will bring our Latinx identities and creativeness to make your project vision a reality.
 
 .container.home-lead
 	.row
-		.col-lg-12
+		.column.column-12
 			p.lead.text-center We live to make beautiful and functionally interactive online spaces.
 
 section#solutions.extra-padding
 	.container      
 		.row
-			.col-lg-12
+			.column.column-12
 				h1 Our Services Include:
-			.col-sm-4
-				.package.wow.fadeIn
+			.column.column-4
+				.package
 					.p-heading
 						h3.text-center Graphic Design
 					.p-content
@@ -69,7 +64,7 @@ section#solutions.extra-padding
 							li Mobile-first design
 							li Focus on user experience
 
-			.col-sm-4
+			.column.column-4
 				.package.popular
 					.p-heading
 						h3.text-center Web Development
@@ -79,7 +74,7 @@ section#solutions.extra-padding
 							li Web Applications
 							li WordPress Sites
 							li Static Sites
-			.col-sm-4
+			.column.column-4
 				.package
 					.p-heading
 						h3.text-center Project Management
@@ -91,17 +86,17 @@ section#solutions.extra-padding
 
 .container.home-lead
 	.row
-		.col-lg-12
+		.column.column-12
 			p.lead.text-center Latinx-owned business? Organization trying to make the better world? We want to help you!
 
 
 
 section#contact.container
 	.row
-		.col-lg-12
+		.column.column-12
 			h3 Get in touch to start your project
-		.col-lg-4.col-md-2.col-sm-2
-		.col-lg-4.col-md-8.col-sm-8
+		.column.column-4
+		.column.column-4.column.column-8.column.column-8
 			form(action='//formspree.io/celso@pocholabs.com', method='POST')
 				.form-group
 					input(type='text', name='name', class="form-control", placeholder="Your Name")
@@ -111,23 +106,23 @@ section#contact.container
 					textarea(type='text', name='message', class="form-control", placeholder="Your Message")
 				.form-group
 					input(type='submit', value='Send', class="form-control btn btn-primary")
-		.col-lg-4.col-md-4.col-sm-2
+		.column.column-4
 
 footer
 	.container
 		.row
-			.col-md-12.text-center
+			.column.column-12.text-center
 				h4 Follow Us!
 		.row.social-media
-			.col-xs-4.text-center
+			.column.column-4.text-center
 				a(href="https://www.facebook.com/pocholabs/" target="_blank")
 					i.fa.fa-facebook-square
-			.col-xs-4.text-center
+			.column.column-4.text-center
 				a(href="https://twitter.com/pocholabs" target="_blank")
 					i.fa.fa-twitter-square
-			.col-xs-4.text-center
+			.column.column-4.text-center
 				a(href="https://github.com/PochoLabs" target="_blank")
 					i.fa.fa-github-square
 		.row
-			.col-lg-12
+			.column.column-12
 				h5.text-center Copyright &copy; 2016. A project of Computer Dude Services LLC.
